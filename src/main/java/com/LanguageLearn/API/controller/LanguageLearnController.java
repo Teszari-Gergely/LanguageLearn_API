@@ -40,9 +40,8 @@ public class LanguageLearnController {
 	}
 	
 	
-	@PostMapping
+	@PostMapping("/pwd")
 	@ResponseBody
-	@RequestMapping("/pwd")
 	public Integer addOrUpdatePWD(@RequestParam(required = true) String oldPWD, 
 			@RequestParam(required = true) String newPWD)
 	{
